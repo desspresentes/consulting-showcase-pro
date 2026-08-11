@@ -740,6 +740,69 @@ function Fechamento() {
   );
 }
 
+/* 17 — Próximo capítulo */
+function ProximoCapitulo() {
+  return (
+    <div className="slide-content texture-grain bg-ink-gradient text-paper">
+      <div aria-hidden className="pointer-events-none absolute inset-0 opacity-[0.10] texture-grid" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-[340px] -bottom-[340px] h-[900px] w-[900px] rounded-full bg-brand-gradient opacity-25 blur-[130px]"
+      />
+      <div aria-hidden className="absolute left-0 right-0 top-0 h-[6px] bg-brand-gradient" />
+
+      <div className="absolute inset-x-[130px] top-[96px] bottom-[92px] flex flex-col justify-between">
+        <img src={logoBranco.url} alt="Outros Ares" className="h-[76px] w-auto self-start object-contain" />
+
+        <div className="grid grid-cols-[1.15fr_0.85fr] items-end gap-[70px]">
+          <div>
+            <span className="slide-kicker text-paper/70">Vamos começar</span>
+            <h2 className="slide-title mt-[22px] max-w-[1000px]">
+              O próximo capítulo da sua marca começa agora.
+            </h2>
+            <p className="slide-body-lg mt-[26px] max-w-[900px] text-paper/85">
+              Sua empresa já tem uma história. Agora é hora de construir a próxima fase dela.
+            </p>
+            <p className="slide-subtitle mt-[26px] text-brand-gradient">
+              90 dias para organizar, posicionar, transformar e evoluir.
+            </p>
+          </div>
+
+          <div className="rounded-[24px] border border-paper/15 bg-paper/[0.06] p-[44px]">
+            <p className="slide-body-lg text-paper/90">
+              Vamos transformar potencial em percepção.
+              <br />
+              Percepção em valor.
+              <br />E valor em crescimento.
+            </p>
+            <a
+              href="https://wa.me/5511987947984"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-[34px] inline-flex items-center gap-[16px] rounded-full bg-brand-gradient px-[38px] py-[22px] text-paper shadow-[var(--shadow-elegant)]"
+            >
+              <span className="slide-badge">WhatsApp</span>
+              <span className="text-[32px] leading-none">(11) 98794-7984</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="flex items-end justify-between border-t border-paper/15 pt-[30px]">
+          <div>
+            <p className="slide-subtitle">OUTROS ARES</p>
+            <p className="slide-caption mt-[10px] text-paper/70">
+              Marca. Experiência. Marketing. Estratégia.
+            </p>
+          </div>
+          <p className="slide-chrome text-paper/60">Emilly Guedes Sales · Design &amp; Marketing</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
 export const slides: { id: string; title: string; render: () => ReactNode }[] = [
   { id: "capa", title: "Capa", render: () => <Cover /> },
   { id: "ponto-de-partida", title: "O ponto de partida", render: () => <Question /> },
