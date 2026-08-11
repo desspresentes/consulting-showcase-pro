@@ -165,7 +165,7 @@ function Diagnostico() {
 
 /* 04 — Método */
 function Metodo() {
-  const steps = [
+  const steps: [string, string, string][] = [
     ["01", "Descobrir", "Diagnóstico do negócio, público, mercado e posicionamento."],
     ["02", "Posicionar", "Definição de como a marca deve ser percebida."],
     ["03", "Expressar", "Identidade visual, comunicação e linguagem."],
@@ -273,7 +273,7 @@ function Pilares() {
 
 /* 06 — Experiência */
 function Experiencia() {
-  const sentidos = [
+  const sentidos: [string, string][] = [
     ["Visão", "O que o cliente vê no ambiente, nos materiais e na vitrine."],
     ["Olfato", "Existe um aroma característico? Ele combina com o posicionamento?"],
     ["Audição", "A trilha e o ambiente sonoro sustentam a experiência?"],
@@ -319,7 +319,7 @@ function Experiencia() {
 
 /* 07 — Pontos de contato */
 function Jornada() {
-  const etapas = [
+  const etapas: [string, string][] = [
     ["Descoberta", "Instagram · Google · Indicação · Anúncio"],
     ["Primeiro contato", "WhatsApp · Telefone · Loja · Direct"],
     ["Consideração", "Apresentação · Orçamento · Catálogo · Reunião"],
@@ -355,7 +355,7 @@ function Jornada() {
 
 /* 08 — Raio-X */
 function RaioX() {
-  const areas = [
+  const areas: [string, string][] = [
     ["Identidade", "Precisa melhorar"],
     ["Presença digital", "Precisa ser corrigido"],
     ["Experiência física", "Precisa melhorar"],
@@ -455,7 +455,7 @@ function Gargalos() {
 
 /* 10 — Plano de evolução */
 function PlanoEvolucao() {
-  const blocos = [
+  const blocos: [string, string][] = [
     ["Urgente", "O que precisa ser corrigido imediatamente."],
     ["Importante", "O que deve ser melhorado nos próximos 30–60 dias."],
     ["Estratégico", "O que deve ser desenvolvido nos próximos 3–6 meses."],
