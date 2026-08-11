@@ -622,6 +622,7 @@ function Investimento() {
       nome: "Estratégica",
       claim: "Para estruturar.",
       preco: "R$ 2.997",
+      pagamento: "Até 3x sem juros · cartão ou boleto",
       duracao: "60 dias",
       itens: [
         "Tudo da Essencial +",
@@ -636,7 +637,8 @@ function Investimento() {
     {
       nome: "Transformação",
       claim: "Para transformar.",
-      preco: "R$ 4.997",
+      preco: "R$ 4.197",
+      pagamento: "Até 3x sem juros · cartão ou boleto",
       duracao: "90 dias",
       itens: [
         "Tudo da Estratégica +",
