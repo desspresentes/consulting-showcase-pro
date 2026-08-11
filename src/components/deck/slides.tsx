@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { SlideLayout } from "./SlideLayout";
 import logoBranco from "@/assets/logo-branco.png.asset.json";
 
-const TOTAL = 16;
+const TOTAL = 17;
 
 function Bullets({
   items,
@@ -606,7 +606,8 @@ function Investimento() {
     {
       nome: "Essencial",
       claim: "Para descobrir.",
-      preco: "R$ 1.497",
+      preco: "R$ 1.697",
+      pagamento: "Até 2x sem juros · cartão ou boleto",
       duracao: "30 dias",
       itens: [
         "Diagnóstico completo de marca",
@@ -621,6 +622,7 @@ function Investimento() {
       nome: "Estratégica",
       claim: "Para estruturar.",
       preco: "R$ 2.997",
+      pagamento: "Até 3x sem juros · cartão ou boleto",
       duracao: "60 dias",
       itens: [
         "Tudo da Essencial +",
@@ -635,7 +637,8 @@ function Investimento() {
     {
       nome: "Transformação",
       claim: "Para transformar.",
-      preco: "R$ 4.997",
+      preco: "R$ 4.197",
+      pagamento: "Até 3x sem juros · cartão ou boleto",
       duracao: "90 dias",
       itens: [
         "Tudo da Estratégica +",
@@ -656,11 +659,11 @@ function Investimento() {
           Mais indicada · Transformação
         </span>
       </div>
-      <div className="mt-[36px] grid grid-cols-3 gap-[30px]">
+      <div className="mt-[26px] grid grid-cols-3 gap-[28px]">
         {planos.map((p) => (
           <div
             key={p.nome}
-            className={`flex min-h-[520px] flex-col rounded-[20px] p-[34px] ${
+            className={`flex min-h-[440px] flex-col rounded-[20px] p-[30px] ${
               p.destaque
                 ? "bg-ink-gradient text-paper shadow-[var(--shadow-elegant)]"
                 : "border border-brand-gray/60 bg-paper"
@@ -669,19 +672,31 @@ function Investimento() {
             <span className={`slide-badge ${p.destaque ? "text-paper/60" : "text-muted-foreground"}`}>
               {p.duracao}
             </span>
-            <h3 className="mt-[16px] text-[42px] tracking-[-0.02em]">{p.nome}</h3>
+            <h3 className="mt-[12px] text-[40px] tracking-[-0.02em]">{p.nome}</h3>
             <p className={`slide-caption mt-[8px] ${p.destaque ? "text-paper/60" : "text-muted-foreground"}`}>
               {p.claim}
             </p>
-            <p className="slide-num mt-[20px] text-[56px] leading-none text-brand-gradient">
+            <p className="slide-num mt-[18px] text-[54px] leading-none text-brand-gradient">
               {p.preco}
             </p>
-            <div className={`mt-[22px] h-px w-full ${p.destaque ? "bg-paper/15" : "bg-brand-gray/60"}`} />
-            <ul className="mt-[22px] space-y-[12px]">
+            <div
+              className={`mt-[14px] rounded-[12px] px-[16px] py-[12px] ${
+                p.destaque ? "bg-paper/10" : "bg-brand-gray/20"
+              }`}
+            >
+              <p className={`text-[21px] leading-[1.3] ${p.destaque ? "text-paper/85" : "text-ink/75"}`}>
+                {p.pagamento}
+              </p>
+              <p className={`text-[21px] leading-[1.3] ${p.destaque ? "text-paper/60" : "text-muted-foreground"}`}>
+                À vista: 5% de desconto
+              </p>
+            </div>
+            <div className={`mt-[18px] h-px w-full ${p.destaque ? "bg-paper/15" : "bg-brand-gray/60"}`} />
+            <ul className="mt-[16px] space-y-[8px]">
               {p.itens.map((i) => (
                 <li key={i} className="flex items-start gap-[14px]">
                   <span className="mt-[12px] h-[7px] w-[7px] shrink-0 rounded-full bg-brand-gradient" />
-                  <span className={`slide-caption ${p.destaque ? "text-paper/80" : "text-ink/75"}`}>
+                  <span className={`text-[22px] leading-[1.25] ${p.destaque ? "text-paper/80" : "text-ink/75"}`}>
                     {i}
                   </span>
                 </li>
@@ -690,6 +705,7 @@ function Investimento() {
           </div>
         ))}
       </div>
+
     </SlideLayout>
   );
 }
@@ -723,6 +739,69 @@ function Fechamento() {
     </div>
   );
 }
+
+/* 17 — Próximo capítulo */
+function ProximoCapitulo() {
+  return (
+    <div className="slide-content texture-grain bg-ink-gradient text-paper">
+      <div aria-hidden className="pointer-events-none absolute inset-0 opacity-[0.10] texture-grid" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-[340px] -bottom-[340px] h-[900px] w-[900px] rounded-full bg-brand-gradient opacity-25 blur-[130px]"
+      />
+      <div aria-hidden className="absolute left-0 right-0 top-0 h-[6px] bg-brand-gradient" />
+
+      <div className="absolute inset-x-[130px] top-[96px] bottom-[92px] flex flex-col justify-between">
+        <img src={logoBranco.url} alt="Outros Ares" className="h-[76px] w-auto self-start object-contain" />
+
+        <div className="grid grid-cols-[1.15fr_0.85fr] items-end gap-[70px]">
+          <div>
+            <span className="slide-kicker text-paper/70">Vamos começar</span>
+            <h2 className="slide-title mt-[22px] max-w-[1000px]">
+              O próximo capítulo da sua marca começa agora.
+            </h2>
+            <p className="slide-body-lg mt-[26px] max-w-[900px] text-paper/85">
+              Sua empresa já tem uma história. Agora é hora de construir a próxima fase dela.
+            </p>
+            <p className="slide-subtitle mt-[26px] text-brand-gradient">
+              90 dias para organizar, posicionar, transformar e evoluir.
+            </p>
+          </div>
+
+          <div className="rounded-[24px] border border-paper/15 bg-paper/[0.06] p-[44px]">
+            <p className="slide-body-lg text-paper/90">
+              Vamos transformar potencial em percepção.
+              <br />
+              Percepção em valor.
+              <br />E valor em crescimento.
+            </p>
+            <a
+              href="https://wa.me/5511987947984"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-[34px] inline-flex items-center gap-[16px] rounded-full bg-brand-gradient px-[38px] py-[22px] text-paper shadow-[var(--shadow-elegant)]"
+            >
+              <span className="slide-badge">WhatsApp</span>
+              <span className="text-[32px] leading-none">(11) 98794-7984</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="flex items-end justify-between border-t border-paper/15 pt-[30px]">
+          <div>
+            <p className="slide-subtitle">OUTROS ARES</p>
+            <p className="slide-caption mt-[10px] text-paper/70">
+              Marca. Experiência. Marketing. Estratégia.
+            </p>
+          </div>
+          <p className="slide-chrome text-paper/60">Emilly Guedes Sales · Design &amp; Marketing</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
 
 export const slides: { id: string; title: string; render: () => ReactNode }[] = [
   { id: "capa", title: "Capa", render: () => <Cover /> },
@@ -798,4 +877,5 @@ export const slides: { id: string; title: string; render: () => ReactNode }[] = 
   { id: "dossie", title: "Dossiê Estratégico", render: () => <Dossie /> },
   { id: "investimento", title: "Investimento", render: () => <Investimento /> },
   { id: "fechamento", title: "Fechamento", render: () => <Fechamento /> },
+  { id: "proximo-capitulo", title: "O próximo capítulo", render: () => <ProximoCapitulo /> },
 ];
