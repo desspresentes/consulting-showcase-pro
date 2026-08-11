@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { SlideLayout } from "./SlideLayout";
 import logoBranco from "@/assets/logo-branco.png.asset.json";
 
-const TOTAL = 16;
+const TOTAL = 17;
 
 function Bullets({
   items,
@@ -606,7 +606,8 @@ function Investimento() {
     {
       nome: "Essencial",
       claim: "Para descobrir.",
-      preco: "R$ 1.497",
+      preco: "R$ 1.697",
+      pagamento: "Até 2x sem juros · cartão ou boleto",
       duracao: "30 dias",
       itens: [
         "Diagnóstico completo de marca",
