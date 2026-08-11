@@ -639,7 +639,7 @@ function Investimento() {
           Mais indicada · Transformação
         </span>
       </div>
-      <div className="mt-[48px] grid grid-cols-3 gap-[30px]">
+      <div className="mt-[36px] grid grid-cols-3 gap-[30px]">
         {planos.map((p) => (
           <div
             key={p.nome}
@@ -656,11 +656,11 @@ function Investimento() {
             <p className={`slide-caption mt-[8px] ${p.destaque ? "text-paper/60" : "text-muted-foreground"}`}>
               {p.claim}
             </p>
-            <p className="slide-num mt-[26px] text-[56px] leading-none text-brand-gradient">
+            <p className="slide-num mt-[20px] text-[56px] leading-none text-brand-gradient">
               {p.preco}
             </p>
-            <div className={`mt-[28px] h-px w-full ${p.destaque ? "bg-paper/15" : "bg-brand-gray/60"}`} />
-            <ul className="mt-[26px] space-y-[14px]">
+            <div className={`mt-[22px] h-px w-full ${p.destaque ? "bg-paper/15" : "bg-brand-gray/60"}`} />
+            <ul className="mt-[22px] space-y-[12px]">
               {p.itens.map((i) => (
                 <li key={i} className="flex items-start gap-[14px]">
                   <span className="mt-[12px] h-[7px] w-[7px] shrink-0 rounded-full bg-brand-gradient" />
