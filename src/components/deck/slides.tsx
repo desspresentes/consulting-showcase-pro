@@ -676,11 +676,23 @@ function Investimento() {
             <p className={`slide-caption mt-[8px] ${p.destaque ? "text-paper/60" : "text-muted-foreground"}`}>
               {p.claim}
             </p>
-            <p className="slide-num mt-[20px] text-[56px] leading-none text-brand-gradient">
+            <p className="slide-num mt-[18px] text-[54px] leading-none text-brand-gradient">
               {p.preco}
             </p>
-            <div className={`mt-[22px] h-px w-full ${p.destaque ? "bg-paper/15" : "bg-brand-gray/60"}`} />
-            <ul className="mt-[22px] space-y-[12px]">
+            <div
+              className={`mt-[14px] rounded-[12px] px-[16px] py-[12px] ${
+                p.destaque ? "bg-paper/10" : "bg-brand-gray/20"
+              }`}
+            >
+              <p className={`slide-caption ${p.destaque ? "text-paper/85" : "text-ink/75"}`}>
+                {p.pagamento}
+              </p>
+              <p className={`slide-caption ${p.destaque ? "text-paper/60" : "text-muted-foreground"}`}>
+                À vista: 5% de desconto
+              </p>
+            </div>
+            <div className={`mt-[18px] h-px w-full ${p.destaque ? "bg-paper/15" : "bg-brand-gray/60"}`} />
+            <ul className="mt-[18px] space-y-[10px]">
               {p.itens.map((i) => (
                 <li key={i} className="flex items-start gap-[14px]">
                   <span className="mt-[12px] h-[7px] w-[7px] shrink-0 rounded-full bg-brand-gradient" />
@@ -693,6 +705,7 @@ function Investimento() {
           </div>
         ))}
       </div>
+
     </SlideLayout>
   );
 }
