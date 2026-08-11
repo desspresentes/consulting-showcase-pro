@@ -877,4 +877,5 @@ export const slides: { id: string; title: string; render: () => ReactNode }[] = 
   { id: "dossie", title: "Dossiê Estratégico", render: () => <Dossie /> },
   { id: "investimento", title: "Investimento", render: () => <Investimento /> },
   { id: "fechamento", title: "Fechamento", render: () => <Fechamento /> },
+  { id: "proximo-capitulo", title: "O próximo capítulo", render: () => <ProximoCapitulo /> },
 ];
