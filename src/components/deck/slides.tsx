@@ -422,32 +422,49 @@ function RaioX() {
 
 /* 09 — Gargalos */
 function Gargalos() {
-  const items = [
-    "A identidade visual não transmite o posicionamento premium.",
-    "A fachada não comunica claramente o que a empresa oferece.",
-    "O Instagram tem conteúdo, mas não tem estratégia comercial.",
-    "Os materiais comerciais possuem identidades visuais diferentes.",
-    "O ambiente físico não é compatível com o ticket praticado.",
-    "Não existe padronização dos documentos.",
-    "O atendimento não possui uma linguagem definida.",
-    "As embalagens não reforçam a marca.",
-    "Não existe estratégia de pós-venda.",
-    "Oportunidades de relacionamento não exploradas.",
+  const items: [string, string][] = [
+    ["Posicionamento confuso", "A empresa diz ser premium, mas comunica de forma popular."],
+    ["Identidade visual desconectada", "O logo, cores e tipografia não refletem o valor cobrado."],
+    ["Comunicação sem estratégia", "Posta todos os dias, mas não conduz à decisão de compra."],
+    ["Pontos de contato incoerentes", "Site, Instagram, WhatsApp e loja parecem de empresas diferentes."],
+    ["Experiência abaixo do preço", "O ambiente físico não justifica o ticket praticado."],
+    ["Materiais comerciais despadronizados", "Propostas, catálogos e apresentações têm visual divergente."],
+    ["Atendimento sem linguagem definida", "Cada pessoa fala de um jeito, transmitindo mensagens diferentes."],
+    ["Embalagens genéricas", "A embalagem perde a chance de reforçar a marca no pós-compra."],
+    ["Sem estratégia de pós-venda", "O cliente compra e não recebe acompanhamento, perdendo recorrência."],
+    ["Oportunidades desperdiçadas", "Indicações, parcerias e relacionamento não são explorados."],
   ];
   return (
     <SlideLayout tone="light" kicker="Diagnóstico" index={9} total={TOTAL}>
-      <h2 className="slide-title">
-        Os 10 principais <span className="text-brand-gradient">gargalos</span> da marca
-      </h2>
-      <div className="mt-[54px] grid grid-cols-2 gap-x-[70px] gap-y-[24px]">
-        {items.map((t, i) => (
-          <div key={t} className="flex items-start gap-[22px] border-b border-brand-gray/50 pb-[20px]">
-            <span className="slide-num text-[34px] leading-none text-brand-gray">
-              {String(i + 1).padStart(2, "0")}
-            </span>
-            <p className="slide-caption pt-[6px] text-ink/80">{t}</p>
-          </div>
-        ))}
+      <div className="grid h-full grid-cols-[1fr_1.05fr] gap-[60px]">
+        <div className="flex flex-col justify-center">
+          <h2 className="slide-title">
+            Os 10 principais <span className="text-brand-gradient">gargalos</span> da marca
+          </h2>
+          <div className="mt-[30px] h-[3px] w-[120px] bg-brand-gradient" />
+          <p className="slide-body mt-[30px] text-ink/70">
+            Um diagnóstico estratégico para identificar o que está impedindo sua marca de crescer.
+          </p>
+          <p className="slide-body mt-[20px] text-ink/70">
+            Durante a primeira etapa da consultoria, a Outros Ares realiza uma análise completa da empresa, considerando marca, identidade visual, comunicação, marketing, experiência, ambiente e processo comercial.
+          </p>
+          <p className="slide-caption mt-[24px] text-muted-foreground">
+            A partir dessa análise, identificamos os 10 pontos que mais impactam negativamente a percepção, comunicação, experiência e potencial de crescimento da marca.
+          </p>
+        </div>
+        <div className="grid grid-cols-2 content-center gap-x-[30px] gap-y-[18px]">
+          {items.map(([t, d], i) => (
+            <div key={t} className="flex items-start gap-[16px]">
+              <span className="slide-num text-[30px] leading-none text-brand-gray">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <div>
+                <h3 className="text-[26px] leading-tight tracking-[-0.02em]">{t}</h3>
+                <p className="slide-caption mt-[4px] text-ink/65">{d}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </SlideLayout>
   );
