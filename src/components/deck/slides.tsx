@@ -76,7 +76,7 @@ function Cover() {
         <img
           src={logoBranco.url}
           alt="Emilly Guedes Sales — Outros Ares"
-          className="h-[96px] w-auto object-contain"
+          className="h-[96px] w-auto self-start object-contain"
         />
         <div>
           <span className="slide-kicker text-paper/60">Proposta · 2026</span>
@@ -643,7 +643,7 @@ function Investimento() {
         {planos.map((p) => (
           <div
             key={p.nome}
-            className={`flex min-h-[560px] flex-col rounded-[20px] p-[40px] ${
+            className={`flex min-h-[520px] flex-col rounded-[20px] p-[34px] ${
               p.destaque
                 ? "bg-ink-gradient text-paper shadow-[var(--shadow-elegant)]"
                 : "border border-brand-gray/60 bg-paper"
@@ -683,7 +683,7 @@ function Fechamento() {
     <div className="slide-content texture-grain bg-brand-gradient text-paper">
       <div aria-hidden className="pointer-events-none absolute inset-0 opacity-[0.10] texture-grid" />
       <div className="absolute inset-x-[130px] top-[120px] bottom-[110px] flex flex-col justify-between">
-        <img src={logoBranco.url} alt="Outros Ares" className="h-[84px] w-auto object-contain" />
+        <img src={logoBranco.url} alt="Outros Ares" className="h-[84px] w-auto self-start object-contain" />
         <div>
           <span className="slide-kicker text-paper/70">Importante</span>
           <h2 className="slide-title mt-[24px] max-w-[1300px]">
