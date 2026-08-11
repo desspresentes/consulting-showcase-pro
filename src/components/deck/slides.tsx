@@ -684,10 +684,10 @@ function Investimento() {
                 p.destaque ? "bg-paper/10" : "bg-brand-gray/20"
               }`}
             >
-              <p className={`slide-caption ${p.destaque ? "text-paper/85" : "text-ink/75"}`}>
+              <p className={`text-[21px] leading-[1.3] ${p.destaque ? "text-paper/85" : "text-ink/75"}`}>
                 {p.pagamento}
               </p>
-              <p className={`slide-caption ${p.destaque ? "text-paper/60" : "text-muted-foreground"}`}>
+              <p className={`text-[21px] leading-[1.3] ${p.destaque ? "text-paper/60" : "text-muted-foreground"}`}>
                 À vista: 5% de desconto
               </p>
             </div>
@@ -696,7 +696,7 @@ function Investimento() {
               {p.itens.map((i) => (
                 <li key={i} className="flex items-start gap-[14px]">
                   <span className="mt-[12px] h-[7px] w-[7px] shrink-0 rounded-full bg-brand-gradient" />
-                  <span className={`slide-caption ${p.destaque ? "text-paper/80" : "text-ink/75"}`}>
+                  <span className={`text-[22px] leading-[1.25] ${p.destaque ? "text-paper/80" : "text-ink/75"}`}>
                     {i}
                   </span>
                 </li>
