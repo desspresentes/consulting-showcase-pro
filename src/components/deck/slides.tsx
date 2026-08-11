@@ -659,11 +659,11 @@ function Investimento() {
           Mais indicada · Transformação
         </span>
       </div>
-      <div className="mt-[36px] grid grid-cols-3 gap-[30px]">
+      <div className="mt-[26px] grid grid-cols-3 gap-[28px]">
         {planos.map((p) => (
           <div
             key={p.nome}
-            className={`flex min-h-[520px] flex-col rounded-[20px] p-[34px] ${
+            className={`flex min-h-[440px] flex-col rounded-[20px] p-[30px] ${
               p.destaque
                 ? "bg-ink-gradient text-paper shadow-[var(--shadow-elegant)]"
                 : "border border-brand-gray/60 bg-paper"
@@ -672,7 +672,7 @@ function Investimento() {
             <span className={`slide-badge ${p.destaque ? "text-paper/60" : "text-muted-foreground"}`}>
               {p.duracao}
             </span>
-            <h3 className="mt-[16px] text-[42px] tracking-[-0.02em]">{p.nome}</h3>
+            <h3 className="mt-[12px] text-[40px] tracking-[-0.02em]">{p.nome}</h3>
             <p className={`slide-caption mt-[8px] ${p.destaque ? "text-paper/60" : "text-muted-foreground"}`}>
               {p.claim}
             </p>
@@ -692,7 +692,7 @@ function Investimento() {
               </p>
             </div>
             <div className={`mt-[18px] h-px w-full ${p.destaque ? "bg-paper/15" : "bg-brand-gray/60"}`} />
-            <ul className="mt-[18px] space-y-[10px]">
+            <ul className="mt-[16px] space-y-[8px]">
               {p.itens.map((i) => (
                 <li key={i} className="flex items-start gap-[14px]">
                   <span className="mt-[12px] h-[7px] w-[7px] shrink-0 rounded-full bg-brand-gradient" />
