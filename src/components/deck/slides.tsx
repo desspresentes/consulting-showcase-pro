@@ -781,8 +781,8 @@ function ProximoCapitulo() {
               rel="noreferrer"
               className="mt-[34px] inline-flex items-center gap-[16px] rounded-full bg-brand-gradient px-[38px] py-[22px] text-paper shadow-[var(--shadow-elegant)]"
             >
-              <span className="slide-badge">WhatsApp</span>
-              <span className="text-[32px] leading-none">(11) 98794-7984</span>
+              <span className="slide-badge">QUERO A CONSULTORIA</span>
+              <span className="text-[28px] leading-none">(11) 98794-7984</span>
             </a>
           </div>
         </div>
