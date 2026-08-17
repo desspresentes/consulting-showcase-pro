@@ -1,14 +1,16 @@
-# Welcome to your Lovable project
+# Proposta consultoria de Marca
+
+Lovable preciso criar uma apresentação para a minha empresa, será uma proposta de consultoria de marca. coloque o logotipo e as cores da marca que é #009a3f, #0e3bb8, #c5c6c5, #ffffff, #000000. As fontes usadas pode ser PLAYFAIR DISPLAY, FUTURA, FUTURA BOLD,  SORA, POPPINS. Pode colocar texturas, elementos, formas. Seja criativo, esse documento precisa ser em formato de apresentação, clean e muito elegante, quero passar a autoridade de que sei que sou boa no que faço. As informações estão no arquivo enviado, use as informações importantes para montar.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/cfa13991-8d3c-4c28-912d-23b5675a3c46).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +22,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
