@@ -788,12 +788,9 @@ function ProximoCapitulo() {
         </div>
 
         <div className="flex items-end justify-between border-t border-paper/15 pt-[30px]">
-          <div>
-            <p className="slide-subtitle">OUTROS ARES</p>
-            <p className="slide-caption mt-[10px] text-paper/70">
-              Marca. Experiência. Marketing. Estratégia.
-            </p>
-          </div>
+          <p className="slide-caption text-paper/70">
+            Marca. Experiência. Marketing. Estratégia.
+          </p>
           <p className="slide-chrome text-paper/60">Emilly Guedes Sales · Design &amp; Marketing</p>
         </div>
       </div>
